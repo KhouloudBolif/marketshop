@@ -1,0 +1,1064 @@
+.acceuil{
+  background-image:url(smatshop.png) ;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; 
+  
+}
+.search-box{
+
+width:40%;
+display: inline;
+align-items: center;
+padding: 0px 10px;
+justify-content: center;
+}
+
+.search-box input{
+  position: relative;
+  background:white;
+  width: 88%;
+  padding: 2%;
+ border-radius: 40px;
+ border: none;
+ outline: none;
+}
+.search-box button{
+  background: none;
+  border: none;
+}
+.search-box input:hover{
+  background-image: linear-gradient(to right, beige, #bb381be1);
+  color: black;
+}
+.search-box button:hover{
+  color:#BB381B;
+  background: rgb(201, 196, 196) ;
+  border-radius: 50%;
+}
+nav{
+    width: auto;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+nav a{
+margin-left: 4%;
+font-size: 180%;
+    color: black;
+}
+#logo{
+width: 13%;
+height: 5%;
+margin-right:15% ;
+margin-left: 3%;
+justify-content: flex-start;
+}
+.username{
+ font-family: cursive;
+ text-transform: uppercase;
+  margin: 0%;
+  max-width: 7%;
+  background-color:rgba(0,0,0,0.1);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.username:hover{
+  color:#BB381B ;
+
+}
+
+.nav1{
+  position: relative;
+  left:5%;
+  display: flex;
+ justify-content: flex-end;
+ margin-left: 8%;
+}
+.nav1 a{
+   margin-left: 30%;
+}
+.nav1 a i{
+ font-size: 120%;
+}
+#comment{
+  position: relative;
+  top: 15%;
+}
+.nav1 a i:hover{
+  color:#BB381B;
+}
+
+/* partie de menu vertical*/
+.category{
+    left: 0;
+    width: 7%;
+    overflow: hidden;
+    height: auto;
+   background-color: white;
+ 
+}
+.category li{
+  list-style: none;
+  position: relative;
+  display: table;
+  width: 300px;
+  padding: 10px;
+  background: white;
+}
+.category a i {
+  transition: all 0.3s ease;
+  margin-bottom: 19%;
+  font-size: 220%;
+}
+ .category a span {
+   margin-left: 9%;
+   
+  }
+  /* ou le menu vertical ouvre pour montrer le nom de chaque categories*/
+  .category:hover{
+  width: 15%;
+  cursor:pointer;
+  }
+  .category li:hover{
+    color: #BB381B;
+  }
+ 
+/* partie de sous menu pour chaque categories*/
+#books {
+    
+    width: 0;
+    z-index: 1;
+    position:absolute;
+    height: 100%;
+    top: 15%;
+    left: 15%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  #food  {
+    width: 0;
+    position:absolute;
+   
+    height: 100%;
+    top: 15%;
+    left: 15%;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+ 
+  #Vetement {
+    width: 0;
+    position:absolute;
+    
+    height: 100%;
+    top: 15%;
+    left: 15%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  #home {
+    width: 0;
+    position:absolute;
+    height: 100%;
+    top: 15%;
+    left: 15%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+   
+    
+  }
+  #electro {
+    width: 0;
+    position:absolute;
+    height: 100%;
+    top: 15%;
+    left: 15%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+ 
+ 
+
+
+  /* partie de publicite*/
+  .slide-pub{
+   z-index: -2;
+    position: absolute;
+    top: 12%;
+    left: 8%;
+}
+  /*partie de produits*/
+  .prod{
+    z-index: 5;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 0;
+    width: 90%;
+    display: none;
+    margin-bottom: 10%;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    
+  }
+  
+  .all h1{
+    font-family: fantasy;
+    margin-left: 5%;
+    margin-top: -4%;
+  }
+
+.container .col-md-4{
+
+flex:1 1 30rem;
+box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+border-radius: .5rem;
+border: .1rem solid rgba(0,0,0,0.1);
+position: relative;
+
+}
+.prod .container .col-md-4:hover{
+transform:  scale(1.1,1.1);}
+.container  .col-md-4 .image{
+  position: relative;
+  text-align: center;
+  padding-top: 1.5rem;
+  overflow: hidden;
+  width: 13.55rem;
+  
+}
+.container  .col-md-4 .image img{
+  height: 10rem;
+  
+}
+.container .col-md-4:hover .image img{
+  transform: scale(1.1);
+}
+.container  .col-md-4 .image .icons{
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+.container  .col-md-4:hover .image .icons{
+  bottom: 0;
+}
+.container  .col-md-4 .image .icons a{
+  height: 2.5rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  background:orangered;
+  color: white;
+}
+.container  .col-md-4 .image .icons a:hover{
+  background: black;
+  color: white;
+}
+
+
+.container  .col-md-4 .infoprod h5 a{
+ color: #333;
+}
+.container  .col-md-4 .infoprod h5 a:hover{
+  color: blue;
+}
+.container  .col-md-4 .infoprod .prix{
+  font-weight: bolder;
+}
+.container  .col-md-4 .infoprod .prix span{
+  float: right;
+  
+}
+/*partie des sous menus*/
+/* sous menu home */
+.row .col-md-4.ssmenu{
+  background-color: white;
+  border-radius:2%;
+  margin: 5% 1% 0% 2%;
+  width: 30%;
+  /*shadow des sous menu*/
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  cursor: pointer;
+   transition: transform 0.5;
+}
+/*animation*/
+.row .col-md-4.ssmenu:hover{
+  transform: translateY(-10px);
+}
+
+.row .col-md-4.ssmenu  li {
+  list-style: none;
+}
+/*decoration des li*/
+.row .col-md-4.ssmenu  li:hover{
+text-decoration: underline;
+}
+.row .col-md-4.ssmenu a{
+  text-decoration: none;
+  font-family:fantasy;
+  color: black;
+  
+}
+#home h2{
+  
+  position: absolute;
+  top: 15px;
+  left: 1%;
+}
+/* sous menu Electronique */
+#electro h2{
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}
+.electrocol li{
+  list-style: none;
+}
+.electroligne .electrocol  li:hover{
+  text-decoration: underline;
+
+}
+.electroligne  a{
+text-decoration: none;
+font-family:fantasy;
+color: black;
+
+}
+.electrocol {
+  background-color:white;
+  border-radius:4% ;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  width: 35%;
+  display: inline-block;
+  margin: 13px;
+  cursor: pointer;
+  transition: transfom 0.5;
+}
+.electroligne .electrocol:hover{
+  transform: translateY(-10px);
+
+}
+/* sous menu Biblio */
+#books h2{
+  
+  position: absolute;
+  top: 15px;
+  left: 1%;
+}
+#books{
+  position: absolute;
+  left:15%;
+}
+
+/*style des details des produits*/
+.pop{
+  
+  background: rgba(0,0,0,0.6);
+  width: 101%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+ flex: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  margin-left: -0.5%;
+  
+  
+}
+.details{
+  position: absolute;
+  background-color: whitesmoke;
+  padding: 3px;
+  margin: 7% 15% 0 15%;
+  width: 75%;
+  height: 70%;
+  
+ 
+}
+.im{
+  position: absolute;
+  float: left;
+ margin-left: 2%;
+ margin-top: 1%;
+ 
+
+ height: 90%;
+ width: 50%;
+  
+}
+
+
+.right{
+  position: relative;
+}
+.details button a{
+  text-decoration: none;
+  color: black;
+}
+.info{ 
+   color: black;
+   width: 100%;
+   margin-left: 60%;
+   margin-top: 5%;
+   font-family: 'Times New Roman', Times, serif;
+}
+.info p{
+  
+  font-size:17px;
+}
+.info h4{
+  font-size: 30px;
+  font-weight: bold;
+}
+.quantité{
+  position: relative;
+  margin-left:0;
+}
+
+#quantite{
+  border: 0.05px solid;
+  margin-top: 1%;
+  margin-bottom: 0%;
+  margin-left: 2%;
+  font-size:16px;
+  font-family:'Times New Roman', Times, serif;
+  width: 15%;
+  border-radius: 4px;
+  background-color: rgba(245, 245, 245, 0.641);
+}
+
+
+.panier{
+  position: relative;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.panier button {
+  width: 25%;
+  border: 1px solid;
+  border-radius: 50px;
+  font-weight: bold;
+  height: 38px;
+  color: whitesmoke;
+ background-color: black;
+}
+.panier button a{
+  color: whitesmoke;
+}
+.panier button:hover{
+  color: black;
+  background-color: whitesmoke;
+}
+.panier button a:hover{
+  color: black;
+  background-color: whitesmoke;
+}
+.close{position: absolute;
+  left: 49%;
+  margin-left: 48%;
+  background: none;
+  border: none;
+  cursor:pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -4%;
+  
+}
+/* partie de page de panier */
+.poubelle{
+  position: relative;
+  left: 18%;
+  width: 50%;
+  border-radius: 20px;
+  padding: 2%;
+  background-color: orangered;
+  color: white;
+  border: none;
+  height: 10%;
+  margin: 3%;
+}
+.poubelle:hover{
+  color: black;
+  transform: scale(1.1);
+}
+#hh{
+  margin-top: 3%;
+  margin-left: 8%;
+  margin-bottom: 1%;
+}
+/*sous menu*/
+.row .col-md-6.ssmenu{
+  background-color: white;
+  border-radius:2%;
+  margin: 13px;
+  width: 35%;
+ padding-left: 2%;
+ box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+ cursor: pointer;
+  transition: transform 0.5;
+   
+}
+.row .col-md-6.ssmenu li {
+  list-style: none;
+
+  
+
+}
+.row .col-md-6.ssmenu a{
+  text-decoration: none;
+  font-family:fantasy;
+  background-color: black;
+
+  
+}
+.row .col-md-6.ssmenu ul a{
+  color:black;
+
+}
+.row .col-md-6.ssmenu li:hover{
+  text-decoration: underline;
+  }
+  .row .col-md-6.ssmenu h4{
+    color: black;
+  }
+  .row .col-md-6.ssmenu:hover{
+    transform: translateY(-10px);
+  }
+  /* sous menu Food */
+  #food h2{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+  }
+  .foodcol li{
+    list-style: none;
+  }
+  .foodligne .foodcol  li:hover{
+    text-decoration: underline;
+  
+  }
+  .foodligne  a{
+  text-decoration: none;
+  font-family:fantasy;
+  color: black;
+
+  }
+  .foodcol {
+    background-color:white;
+    border-radius:4% ;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    width: 35%;
+    display: inline-block;
+    margin: 13px;
+    cursor: pointer;
+    transition: transfom 0.5;
+  }
+  .foodligne .foodcol:hover{
+    transform: translateY(-10px);
+  
+  }
+/* sous menu  Vetements */
+#vetements h2{
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}
+.vetcol li{
+  list-style: none;
+}
+.vetligne .vetcol  li:hover{
+  text-decoration: underline;
+
+}
+.vetligne  a{
+text-decoration: none;
+font-family:fantasy;
+color: black;
+
+}
+.vetcol {
+  background-color:white;
+  border-radius:4% ;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  width: 35%;
+  display: inline-block;
+  margin: 13px;
+  cursor: pointer;
+  transition: transfom 0.5;
+}
+.vetligne .vetcol:hover{
+  transform: translateY(-10px);
+
+}
+
+
+/*partie de connexion selon clients */
+
+/* partie de login*/
+.login{
+    position: absolute;
+    left: 9%;
+    top: 15%;
+ border-radius: 3% ;
+  background:  rgba(0, 0, 0, 0.2);
+    width:50%;
+    height: 60%;
+    z-index: 2;  
+}
+.login:hover{
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+}
+.login h1{
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px orangered;
+    color: orange;
+    font-family: cursive;
+    margin: 15px 0 0 0 ;
+}
+.login form{
+    margin: 7% 0 0 0 ;
+    text-align: center;
+  
+    
+    
+}
+#btnlogin{
+    background-color:rgb(251, 143, 3);
+    cursor: pointer;
+    border: none;
+    width: 25%;
+    margin: 14px 5px;
+    padding: 2%;
+    border-radius: 20px;
+    font-size: 120%;
+    color: white;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.2);
+}
+#btnlogin:hover{opacity: 0.9;}
+.login label{
+    position: relative;
+  left: 6%;
+ top: 8px;
+ font-size:100% ;
+ 
+ color: rgba(37, 27, 27, 0.741);
+}
+.login input{
+    border: none;
+    padding:  10px 40px;
+    margin: 1%;
+    width: 30%;
+   font-size: 15px;
+    border-radius: 15px;
+  
+}
+.login input:hover{
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.2);
+}
+.login p{
+
+   font-family: cursive;
+   text-align: center;
+}
+.login a{
+    text-decoration: none;
+    font-style: italic;
+    color: azure;
+    
+}
+.login a:hover{
+    text-decoration: underline;
+}
+.login p:hover{
+    color: white;
+    text-decoration: underline;
+}
+.error-message{
+  color: rgba(255, 0, 0, 0.807);
+  font-weight: 700;
+  display: inline;
+  text-decoration-line: underline;
+
+ 
+}
+/* partie de signup*/
+.signup{
+    border-radius: 3%;
+    position: absolute;
+    left: 7%;
+    top: 15%;
+    background: rgba(0, 0, 0, 0.4);
+    width:50%; 
+    height: auto;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.2);
+}
+.signup h1{
+  font-family: cursive;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px orangered;
+    color: orange;
+}
+.signup form{
+    position: relative;
+    left: 30%;
+   
+}
+.signup input{
+ 
+    border: none;
+    display: block;
+    padding:  10px 40px;
+    margin: 3% 1%;
+    width: 30%;
+   font-size: 15px;
+    border-radius: 15px;
+}
+.signup input:hover{
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.2);
+
+}
+
+.signup p{
+    font-family: "popping",sans-serif;
+   text-align: center;
+  
+}
+.signup p strong{
+    
+    font-style: italic;
+}
+#btnsignup{
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    width: 25%;
+    margin: 14px 5px;
+    padding: 2%;
+    font-size: 120%;
+    border-radius: 20px;
+    position: relative;
+    left: 6%;
+    color: white;
+}
+#btnsignup:hover{
+  opacity: 0.9;
+}
+.signup .btnclose{
+  
+  background: none;
+  border: none;
+  cursor:pointer;
+  font-size: 250%;
+  float: right;
+  margin-right: 2%;
+
+}
+.login .btnclose{
+  
+  background: none;
+  border: none;
+  cursor:pointer;
+  font-size: 250%;
+  float: right;
+  position: relative;
+  top: -15%;
+  margin-right: 2%;
+
+}
+.btnclose:hover{
+  color: beige;
+  opacity: 0.5;
+  
+}
+.signup p:hover {
+   text-decoration: underline; 
+   color: rgb(198, 188, 188);
+}
+.btnback{
+  background: none;
+  border: none;
+  margin: 2%;
+}
+.btnback:hover{
+  color: beige;
+  opacity: 0.5;
+}
+.replay{
+  background: none;
+
+}
+/* animation d'ouverture*/
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+/* page d'admine */
+.adpg{
+ position: absolute;
+ left: 15%;
+ top:15%;
+ width: 50%;
+ height: 50%;
+ 
+}
+.adminpage{
+  border-radius: 20px;
+  background-color: rgb(244, 214, 159);
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.2);
+  width: 25%;
+  margin: 5%;
+  padding: 5%;
+  text-align: center;
+ 
+ 
+  font-family: cursive;
+ 
+}
+.adminpage a{
+  text-decoration: none;
+   color:#BB381B;
+   font-size: larger;
+}
+.adminpage:hover{
+  transform: scale(1.1,1.1);
+}
+/*css de div de ajoute de produit */
+.ajouterprod{
+  display: none;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+ /*flex: auto;*/
+ 
+
+}
+.contenu{
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.2);
+  border-radius: 20px;
+  background-color: rgba(242, 198, 116, 0.855);
+
+ width: 43%;
+ height:auto;
+ position: absolute;
+ left: 7%;
+ top: 20%;
+}
+.contenu h1{
+  font-family: cursive;
+  text-align: center;
+  color: #BB381B;
+  text-shadow: 2px 2px orangered;
+  
+}
+.contenu form{
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+.contenu input{
+  padding: 2%;
+  margin: 2% 0% 1% 2%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.2);
+width: 40%;
+font-family: cursive;
+}
+.btn{
+  position:absolute;
+  top: 6%;
+  left: 92%;
+  float: right;
+ background: none;
+  border: none;
+
+}
+.btn:hover{
+ opacity: 0.5;
+}
+.contenu input.click{
+  background-color: #BB381B;
+  color: white;
+position: relative;
+left: 25%;
+font-size: larger;
+}
+.contenu input:hover{
+  transform: scale(1.1,1.1);
+}
+.contenu input.click{
+  opacity: 0.8;
+}
+.contenu form select{
+  padding: 2%;
+  margin: 2% 0% 1% 2%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.2);
+width: 40%;
+font-family: cursive;
+}
+.contenu form span {
+  color: #BB381B;
+ font-family: cursive;
+}
+/********************************************************************************************/
+
+
+
+/*  ------   CSS  FOOTER  ------ */
+
+
+footer{
+  position: relative;
+  top:50%;
+    font-family: "Lato", sans-serif;
+}
+.rowfooter{
+    margin-left: 0px;
+    margin-right: 0px;
+    display:flex;
+    color: #000;
+
+}
+.rowfooter div{
+  align-items:center;
+  margin-left:165px;
+  color: #000;
+ 
+}
+
+.globalf{
+    padding: 50px;
+    color: black;
+    margin-top: 80px;
+    background: linear-gradient(to right, rgb(247, 204, 125), rgba(255, 166, 0, 0.821));
+  
+    background-position:center ;
+    background-size: cover;
+    opacity: 0.9;
+}
+.globalf .curve{
+    position: absolute;
+    top: 17%;
+    color: #000;
+    background: #000;
+    opacity: 0.2;
+    width: 90%;
+    height: 38%;
+    border-top-right-radius: 100px ;
+    border-bottom-left-radius: 100px ;
+}
+.globalf h6{
+  color: #000;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.globalf ul{
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.globalf ul a{
+    color:#000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.globalf ul a:hover{
+    opacity: 0.8;
+    color: #eee;
+}
+.globalf .socialf{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0px;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+.globalf .socialf a{
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    line-height: 39px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid beige;
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    color: black;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+.globalf .socialf a:hover{
+  opacity:0.9;
+  box-shadow: 0px 1px 3px 2px rgba(255, 255, 255, 0.9);
+}
+.globalf .copyrightf {
+ text-align: center;
+ padding-top: 24px;
+ font-weight: 500;
+ opacity: 0.8;
+ font-size: 16px;
+}
+html, body{
+  height:100%;
+}
+ #containerft {
+    min-height: 100%;
+ }
+ #mainft {
+    overflow: auto;
+    padding-bottom: 100px;
+ }
+ #footer{
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+ }
+ 
+
+/*  -----   FIN CSS FOOTER ---- */

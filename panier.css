@@ -1,0 +1,184 @@
+.search-box{
+
+    width:40%;
+    display: inline;
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: center;
+    }
+    
+    .search-box input{
+      position: relative;
+      background:white;
+      width: 88%;
+      padding: 2%;
+     border-radius: 40px;
+     border: none;
+     outline: none;
+    }
+    .search-box button{
+      background: none;
+      border: none;
+    }
+    .search-box input:hover{
+      background-image: linear-gradient(to right, beige, #bb381be1);
+      color: black;
+    }
+    .search-box button:hover{
+      color:#BB381B;
+      background: rgb(201, 196, 196) ;
+      border-radius: 50%;
+    }
+    nav{
+        width: auto;
+        background-color: white;
+        display:flex;
+        align-items: center;
+        position: sticky;
+        top: 0%;
+        z-index: 1;
+    }
+    nav a{
+    margin-left: 4%;
+    font-size: 180%;
+        color: black;
+    }
+    #logo{
+    width: 13%;
+    height: 5%;
+    margin-right:15% ;
+    margin-left: 3%;
+    justify-content: flex-start;
+    }
+    .username{
+     font-family: cursive;
+     text-transform: uppercase;
+      margin: 0%;
+      max-width: 7%;
+      background-color:rgba(0,0,0,0.1);
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    }
+    .username:hover{
+      color:#BB381B ;
+    
+    }
+    
+    .nav1{
+      position: relative;
+      left:5%;
+      display: flex;
+     justify-content: flex-end;
+     margin-left: 8%;
+    }
+    .nav1 a{
+       margin-left: 30%;
+    }
+    .nav1 a i{
+     font-size: 120%;
+    }
+    #comment{
+      position: relative;
+      top: 15%;
+    }
+    .nav1 a i:hover{
+      color:#BB381B;
+    }
+    .prod{
+        position: absolute;
+        margin-left: 7%;
+        margin-top: 0;
+        width: 70%;/* hna kant 100 ana bdlta ela hsab overfloe-x kikbr*/
+        display: none;
+    
+      }
+      
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        margin-bottom: 2%;
+       
+      }
+      
+      .all h1{
+        font-family: fantasy;
+        margin-left: 6%;
+        margin-top: 2%;
+      }
+    
+    .container .col-md-4{
+    
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,0.1);
+    position: relative;
+    
+    }
+    .container  .col-md-4 .image{
+      position: relative;
+      text-align: center;
+      padding-top: 1.5rem;
+      overflow: hidden;
+      width: 16rem;
+      
+    }
+    .container  .col-md-4 .image img{
+      height: 10rem;
+      
+    }
+    .container .col-md-4:hover .image img{
+      transform: scale(1.1);
+    }
+ 
+    .container  .col-md-4 .infoprod h5 a{
+     color: #333;
+    }
+    .container  .col-md-4 .infoprod h5 a:hover{
+      color: blue;
+    }
+    .container  .col-md-4 .infoprod .prix{
+      font-weight: bolder;
+    }
+    .container  .col-md-4 .infoprod .prix span{
+      float: right;
+      
+    }
+    .infoprod button{
+      width: 50%;
+    }
+    #trash{
+        margin-top: 1%;
+        margin-left: 20%;
+        margin-bottom: 2%;
+        margin-right: 0;
+        border: 1px solid;
+        border-radius: 20px;
+        font-weight: bold;
+        height: 38px;
+        color: whitesmoke;
+       background-color: black;
+       
+    }
+    #trash:hover{
+        color: black;
+        background-color: whitesmoke;
+      }
+      #quantite{
+        border: 0.05px solid;
+        margin-top: 4%;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        font-size:16px;
+        font-family:'Times New Roman', Times, serif;
+        width: 15%;
+        border-radius: 4px;
+        background-color: rgba(245, 245, 245, 0.641);
+      }
+      .quantité{
+        width: 50%;
+        margin-left: 27%;
+      }      
+    
